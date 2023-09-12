@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #000000; min-height: 12.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px 'Helvetica Neue'; color: #358394; min-height: 25.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px 'Helvetica Neue'; color: #358394}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #000000; min-height: 13.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #000000}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #0c61ab}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #000000; min-height: 16.0px}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #358394}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #0c61ab; min-height: 12.0px}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #358394}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #000000}
+    span.s1 {text-decoration: underline ; color: #0c61ab}
+    span.s2 {color: #000000}
+    span.s3 {font: 13.2px 'Helvetica Neue'}
+    span.s4 {color: #0c61ab}
+    span.s5 {font: 11.0px 'Helvetica Neue'; color: #000000}
+    table.t1 {border-collapse: collapse}
+    td.td1 {width: 87.0px; height: 15.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td2 {width: 363.0px; height: 15.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td3 {width: 87.0px; height: 35.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td4 {width: 363.0px; height: 35.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td5 {width: 87.0px; height: 45.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td6 {width: 363.0px; height: 45.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td7 {width: 87.0px; height: 31.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td8 {width: 363.0px; height: 31.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td9 {width: 87.0px; height: 47.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td10 {width: 363.0px; height: 47.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td11 {width: 61.0px; height: 108.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td12 {width: 233.0px; height: 108.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td13 {width: 147.0px; height: 108.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td14 {width: 61.0px; height: 47.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td15 {width: 233.0px; height: 47.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td16 {width: 147.0px; height: 47.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td17 {width: 61.0px; height: 90.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td18 {width: 233.0px; height: 90.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td19 {width: 147.0px; height: 90.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td20 {width: 61.0px; height: 78.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td21 {width: 233.0px; height: 78.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td22 {width: 147.0px; height: 78.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td23 {width: 61.0px; height: 77.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td24 {width: 233.0px; height: 77.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td25 {width: 147.0px; height: 77.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td26 {width: 61.0px; height: 64.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td27 {width: 233.0px; height: 64.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td28 {width: 147.0px; height: 64.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td29 {width: 61.0px; height: 155.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td30 {width: 233.0px; height: 155.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    td.td31 {width: 147.0px; height: 155.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 4.0px 4.0px 4.0px 4.0px}
+    ol.ol1 {list-style-type: decimal}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1">Cyclistic Case Study</p>
+<p class="p1">Thomas Clarke</p>
+<p class="p1">August 2023</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p3"><b></b><br></p>
+<p class="p3"><b></b><br></p>
+<p class="p2"><br></p>
+<p class="p3"><b></b><br></p>
+<p class="p4"><b>Introduction</b></p>
+<p class="p5"><b></b><br></p>
+<p class="p2"><br></p>
+<p class="p1">In this case study, I wish to illustrate the skills I have developed on the path to a career in data analytics. I will perform the role of a Junior Analyst at a bike share company Cyclistic, tasked with using internal company data to answer key business questions.</p>
+<p class="p2"><br></p>
+<p class="p1">Quick links:</p>
+<p class="p2"><br></p>
+<p class="p1">—SQL queries</p>
+<ol class="ol1">
+  <li class="li1"></li>
+  <li class="li1"></li>
+  <li class="li1"></li>
+  <li class="li1"> <span class="Apple-converted-space"> </span></li>
+</ol>
+<p class="p5"><b></b><br></p>
+<p class="p1">Data Visualizations: Tableau<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p6"><b>Background</b></p>
+<p class="p2"><br></p>
+<p class="p1">In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geo-tracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime.</p>
+<p class="p2"><br></p>
+<p class="p1">Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members.</p>
+<p class="p5"><b></b><br></p>
+<p class="p1">The goal of this analysis is to develop a marketing strategy aimed at converting Casual members into Annual members. I will analyze internal company data to identify who the 2 memberships differ.</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p3"><b></b><br></p>
+<p class="p4"><b>Ask</b></p>
+<p class="p2"><br></p>
+<p class="p6"><b>Guiding questions:</b></p>
+<p class="p2"><br></p>
+<p class="p1">How do annual members and casual riders use Cyclistic bikes differently?</p>
+<p class="p2"><br></p>
+<p class="p6"><b>Key Tasks:</b></p>
+<p class="p2"><br></p>
+<p class="p1">This analysis is to identify the differences in bike use from Casual riders and Annual riders.</p>
+<p class="p2"><br></p>
+<p class="p1">The focus is on converting users from Causal to Annual riders.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">What can we use from the data to increase membership upgrades?</p>
+<p class="p3"><b></b><br></p>
+<p class="p4"><b>Prepare</b></p>
+<p class="p5"><b></b><br></p>
+<p class="p6"><b>Data source</b></p>
+<p class="p2"><br></p>
+<p class="p1">I will use Cyclistic internal data to identify trends in 2021, which can be downloaded <a href="https://divvy-tripdata.s3.amazonaws.com/index.html"><span class="s1">here</span></a>.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">The data has been made available by Motivate International Inc. under this <a href="https://ride.divvybikes.com/data-license-agreement"><span class="s1">license</span></a>.</p>
+<p class="p2"><br></p>
+<p class="p6"><b>Data Organization</b></p>
+<p class="p5"><b></b><br></p>
+<p class="p1">There are 12 CSV files for every month of 2021:</p>
+<p class="p2"><br></p>
+<p class="p1">File naming convention: YYYYMM-divvy-tripdata</p>
+<p class="p2"><br></p>
+<p class="p1">Information provided: ride id, bike type, start time, start station, end time, end station, start location, end location and membership type.</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p4"><b>Process</b></p>
+<p class="p5"><b></b><br></p>
+<p class="p1">The files were stored in a bucket in Google cloud storage and were imported to <b>BiqQuery</b> for exploration, cleaning and analysis.</p>
+<p class="p2"><br></p>
+<p class="p6"><b>Combining the data<span class="Apple-converted-space"> </span></b></p>
+<p class="p5"><b></b><br></p>
+<p class="p7"><span class="s2"><b>SQL: </b></span><b>&lt;&lt;link&gt;&gt;</b></p>
+<p class="p5"><b></b><br></p>
+<p class="p1">12 CSV files are uploaded as tables in a new assigned data set <b>2021</b>.</p>
+<p class="p2"><br></p>
+<p class="p1">The 12 CSV files have been renamed to month abbreviations for easy reference.</p>
+<p class="p2"><br></p>
+<p class="p1">The new combined file is named 2021_combined. The combined file has 5,595,063 row of data covering the entire year.</p>
+<p class="p2"><br></p>
+<p class="p6"><b>Data Exploration</b></p>
+<p class="p5"><b></b><br></p>
+<p class="p1">Checking the data for any obvious issues:</p>
+<p class="p2"><br></p>
+<ul class="ul1">
+  <ul class="ul1">
+    <li class="li1"><span class="s3"></span>The data types for all columns</li>
+    <li class="li1"><span class="s3"></span>Duplicates</li>
+    <li class="li1"><span class="s3"></span>NULL values</li>
+    <li class="li1"><span class="s3"></span>ride_id length</li>
+    <li class="li1"><span class="s3"></span>Number of ride types</li>
+    <li class="li1"><span class="s3"></span>Trips longer than a day</li>
+    <li class="li1"><span class="s3"></span>Trips less than a minute</li>
+    <li class="li1"><span class="s3"></span>Start station and id missing</li>
+    <li class="li1"><span class="s3"></span>End station and id missing</li>
+    <li class="li1"><span class="s3"></span>End coordinates missing</li>
+    <li class="li1"><span class="s3"></span>Membership type</li>
+  </ul>
+</ul>
+<p class="p2"><br></p>
+<p class="p6"><b>Types of Data<span class="Apple-converted-space"> </span></b></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p8"><b></b><br></p>
+<p class="p8"><b></b><br></p>
+<p class="p8"><b></b><br></p>
+<p class="p8"><b></b><br></p>
+<p class="p8"><b></b><br></p>
+<p class="p8"><b></b><br></p>
+<p class="p8"><b></b><br></p>
+<p class="p8"><b></b><br></p>
+<p class="p8"><b></b><br></p>
+<p class="p8"><b></b><br></p>
+<p class="p8"><b></b><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p9"><b>Duplicates</b></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p1">No duplicate rows were found.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p9"><b>NULL Values</b></p>
+        <p class="p10"><br></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p1">690809 NULL values were found for the start station name and id.</p>
+        <p class="p1">739170 NULL values were found for the end station name and id.</p>
+        <p class="p1">4771 Null values were found for the end latitude<span class="Apple-converted-space">  </span>and longitude.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p9"><b>ride_id length</b></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p1">All ride_id lengths are 16.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p9"><b>Number of ride types</b></p>
+        <p class="p10"><br></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p1">There are 3 distinct ride types: electrical bike, classic bike, docked bike.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td7">
+        <p class="p9"><b>Trips longer than a day</b></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p1">There are 4016 trips longer than a day.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td7">
+        <p class="p9"><b>Trips less than a minute</b></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p1">There are 86111 trips less than a minute long.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p9"><b>Start station and id missing</b></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p1">There are 690806 cases where both the start_station_name and the id is missing. These will be removed.</p>
+        <p class="p10"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td7">
+        <p class="p9"><b>End station and id missing</b></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p1">There are 739170 cases where both the end_staiton_name and the id is missing. These will be removed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p9"><b>End coordinates missing</b></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p1">4771 missing values for end location (latitude and longitude). These will be removed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td7">
+        <p class="p9"><b>Membership types</b></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p1">Confirmation that there are only 2 distinct membership types: member and casual.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p8"><b></b><br></p>
+<p class="p8"><b></b><br></p>
+<p class="p1">The start_station_id and end_station_id will be removed from the table as they do not assist in this analysis.</p>
+<p class="p3"><b></b><br></p>
+<p class="p3"><b></b><br></p>
+<p class="p3"><b></b><br></p>
+<p class="p4"><b>Data Cleaning</b></p>
+<p class="p2"><br></p>
+<p class="p1">SQL Query:<span class="s4"> &lt;&lt;link&gt;&gt;</span></p>
+<p class="p11"><br></p>
+<p class="p1">All rows with missing values have been deleted.</p>
+<p class="p2"><br></p>
+<p class="p1">3 columns have been added:</p>
+<ul class="ul1">
+  <ul class="ul1">
+    <li class="li1"><span class="s3"></span>ride_length</li>
+    <li class="li1"><span class="s3"></span>day_of_week</li>
+    <li class="li1"><span class="s3"></span>month</li>
+  </ul>
+</ul>
+<p class="p2"><br></p>
+<p class="p1">2 columns have been removed:</p>
+<ul class="ul1">
+  <ul class="ul1">
+    <li class="li1"><span class="s3"></span>start_station_id</li>
+    <li class="li1"><span class="s3"></span>end_station_id</li>
+  </ul>
+</ul>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">Trips less than a minute and more than a month have been deleted: 90127</p>
+<p class="p2"><br></p>
+<p class="p1">Total rows removed 1068047, 19% of original sample.</p>
+<p class="p3"><b></b><br></p>
+<p class="p4"><b>Analysis</b></p>
+<p class="p2"><br></p>
+<p class="p1">With all the data cleaned the next step is to break down the data into multiple relevant tables to query.</p>
+<p class="p2"><br></p>
+<p class="p1">SQL &lt;&lt;LINK&gt;&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">The data visualizations were performed in tableau.</p>
+<p class="p2"><br></p>
+<p class="p5"><b></b><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td11">
+        <p class="p12"><b>Membership breakdown</b></p>
+        <p class="p10"><br></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p1">Membership is 55% Member and 45% Casual users.<span class="Apple-converted-space"> </span></p>
+        <p class="p2"><br></p>
+        <p class="p1">Members make up 61% of the Classic Bike trips.</p>
+        <p class="p2"><br></p>
+        <p class="p1">100% of Docked Bike trips are Casual users.</p>
+        <p class="p2"><br></p>
+        <p class="p1">Classic Bike is the most used bike.</p>
+      </td>
+      <td valign="top" class="td13">
+        <p class="p1"><i>There are more members than Casual users.</i></p>
+        <p class="p5"><i></i><br></p>
+        <p class="p1"><i>Members use Classic Bikes more than Casual users.</i></p>
+        <p class="p5"><i></i><br></p>
+        <p class="p1"><i>Members do not use Docked Bikes</i></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td14">
+        <p class="p12"><b>Average Trips</b></p>
+      </td>
+      <td valign="top" class="td15">
+        <p class="p1">The average ride duration for all trips is 20:57.</p>
+        <p class="p2"><br></p>
+        <p class="p1">Casuals ride on average 15 minutes longer than Members.</p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p1"><i>Casual riders are riding for longer.<span class="Apple-converted-space"> </span></i></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td17">
+        <p class="p12"><b>Average duration per hour of day</b></p>
+      </td>
+      <td valign="top" class="td18">
+        <p class="p1">The average ride duration remains fairly consistent between the 2 member types other than a dip in ride duration for Casuals from 5am to 9 am.</p>
+        <p class="p2"><br></p>
+        <p class="p1">Casual riders have the longest average trips between 10am-3pm.</p>
+      </td>
+      <td valign="top" class="td19">
+        <p class="p1"><i>Casual riders trips are shorter during commuting times.</i></p>
+        <p class="p5"><i></i><br></p>
+        <p class="p1"><i>Casual riders take longer trips during the middle of the day.</i></p>
+        <p class="p5"><i></i><br></p>
+        <p class="p10"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td14">
+        <p class="p12"><b>Average duration per Day</b></p>
+      </td>
+      <td valign="top" class="td15">
+        <p class="p1">Average rides longer at the weekends. The casual ride average duration falls during the week.</p>
+        <p class="p10"><br></p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p1"><i>All users take longer trips during the weekend.</i></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td20">
+        <p class="p12"><b>Average duration per Month</b></p>
+      </td>
+      <td valign="top" class="td21">
+        <p class="p1">Casual riders ride the longest in May, and the shortest in January and December.</p>
+        <p class="p2"><br></p>
+        <p class="p1">Member riders remain consistent with a small jump in February.</p>
+        <p class="p10"><br></p>
+      </td>
+      <td valign="top" class="td22">
+        <p class="p1"><i>Casual riders take shorter journeys in the winter, and longer in the summer.</i></p>
+        <p class="p5"><i></i><br></p>
+        <p class="p1"><i>Members take similar length journeys throughout the year.</i></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td23">
+        <p class="p12"><b>Total trips by Hour</b></p>
+        <p class="p10"><br></p>
+      </td>
+      <td valign="top" class="td24">
+        <p class="p1">Member usage peaks at 8am and 5pm.</p>
+        <p class="p2"><br></p>
+        <p class="p1">Casual usage builds during the day, peaking at 5pm.</p>
+        <p class="p10"><br></p>
+      </td>
+      <td valign="top" class="td25">
+        <p class="p1"><i>Members use bikes most during commuting hours.</i></p>
+        <p class="p5"><i></i><br></p>
+        <p class="p1"><i>Casuals use bikes more as the day progresses, peaking at 5pm.</i></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td26">
+        <p class="p12"><b>Total daily trips</b></p>
+      </td>
+      <td valign="top" class="td27">
+        <p class="p1">Casual members usage peaks Saturday and Sunday.</p>
+        <p class="p2"><br></p>
+        <p class="p1">Member usage peaks on Wednesday, with small dips on the weekends.</p>
+      </td>
+      <td valign="top" class="td28">
+        <p class="p1"><i>Casual users take more trips on weekends</i></p>
+        <p class="p5"><i></i><br></p>
+        <p class="p1"><i>Members use bikes more on weekdays<span class="Apple-converted-space"> </span></i></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td17">
+        <p class="p12"><b>Total trips by month</b></p>
+      </td>
+      <td valign="top" class="td18">
+        <p class="p1">All usage is lowest in January and February.</p>
+        <p class="p2"><br></p>
+        <p class="p1">Casual members usage highest in July.</p>
+        <p class="p2"><br></p>
+        <p class="p1">Members make many more trips September through December than casuals.</p>
+      </td>
+      <td valign="top" class="td19">
+        <p class="p1"><i>The usage is weather effected</i></p>
+        <p class="p5"><i></i><br></p>
+        <p class="p5"><i></i><br></p>
+        <p class="p5"><i></i><br></p>
+        <p class="p1"><i>More members continue use through the winter than casuals</i></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td29">
+        <p class="p12"><b>Member Destination</b></p>
+      </td>
+      <td valign="top" class="td30">
+        <p class="p1">Most used casual destination station is Streeter Dr &amp; Grand Ave - 66,774 trips ending here.</p>
+        <p class="p2"><br></p>
+        <p class="p1">Most used member destination station is Clark St &amp; Elm St - 23,641 trips ending here.</p>
+        <p class="p2"><br></p>
+        <p class="p1">Causal usage clustered to downtown</p>
+        <p class="p2"><br></p>
+        <p class="p1">Member usage more spread over the metro area.</p>
+        <p class="p2"><br></p>
+        <p class="p1">Members cluster south of downtown.</p>
+      </td>
+      <td valign="top" class="td31">
+        <p class="p1"><i>Casual users favor Streeter Dr &amp; Grand Ave as a start and finish point</i></p>
+        <p class="p5"><i></i><br></p>
+        <p class="p1"><i>Member start and finish points more spread out.</i></p>
+        <p class="p5"><i></i><br></p>
+        <p class="p5"><b></b><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p6"><b>Summary</b></p>
+<p class="p2"><br></p>
+<p class="p1">Members are using the service consistently during the week, primarily during commuting hours. They take similar journey lengths throughout the year and continue to use the service into the winter months, dipping finally in February. The service is used widely and fairly evenly throughout the cities main commercial areas.</p>
+<p class="p2"><br></p>
+<p class="p1">Casuals are riding for longer and more frequently during the middle of the day. The closest average ride duration between the 2 user types is during morning commuting hours (6am-8am). The amount of Casual users drops significantly during the winter months, as well as the average ride duration. The main hub for traffic is the Streeter Dr &amp; Grand Ave station located at the base of the pier.</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p4"><span class="s5"></span><b>Act</b></p>
+<p class="p2"><br></p>
+<p class="p1">From the analyzed data there are a few recommendations for marketing strategies intended to convert casual users to members:</p>
+<p class="p2"><br></p>
+<ul class="ul1">
+  <ul class="ul1">
+    <li class="li1"><span class="s3"></span>Marketing campaigns conducted in the spring and summer would reach the largest amount of casual users.</li>
+    <li class="li1"><span class="s3"></span>Average casual usage drops during morning rush hour, suggesting some are using the bikes to commute. Marketing campaigns should focus around the main commuter destinations incentivizing membership.</li>
+  </ul>
+</ul>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+</body>
+</html>
