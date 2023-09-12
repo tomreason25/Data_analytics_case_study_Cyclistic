@@ -1,28 +1,18 @@
-Cyclistic Case Study
+<h1> Cyclistic Case Study Google Analytics </h1>
+
 Thomas Clarke
 August 2023
 
-
-
-
-
-
-Introduction
-
+<h2>Introduction</h2>
 
 In this case study, I wish to illustrate the skills I have developed on the path to a career in data analytics. I will perform the role of a Junior Analyst at a bike share company Cyclistic, tasked with using internal company data to answer key business questions.
 
 Quick links:
 
 —SQL queries
-
-
-
-  
-
 Data Visualizations: Tableau 
 
-Background
+<h3>Background</h3>
 
 In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geo-tracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime.
 
@@ -32,13 +22,13 @@ The goal of this analysis is to develop a marketing strategy aimed at converting
 
 
 
-Ask
+<h2>Ask</h2>
 
-Guiding questions:
+<h3>Guiding questions:</h3>
 
 How do annual members and casual riders use Cyclistic bikes differently?
 
-Key Tasks:
+<h3>Key Tasks:</h3>
 
 This analysis is to identify the differences in bike use from Casual riders and Annual riders.
 
@@ -46,15 +36,15 @@ The focus is on converting users from Causal to Annual riders.
 
 What can we use from the data to increase membership upgrades?
 
-Prepare
+<h2>Prepare</h2>
 
-Data source
+<h3>Data source</h3>
 
 I will use Cyclistic internal data to identify trends in 2021, which can be downloaded here. 
 
 The data has been made available by Motivate International Inc. under this license.
 
-Data Organization
+<h3>Data Organization</h3>
 
 There are 12 CSV files for every month of 2021:
 
@@ -64,11 +54,11 @@ Information provided: ride id, bike type, start time, start station, end time, e
 
 
 
-Process
+<h2>Process</h2>
 
 The files were stored in a bucket in Google cloud storage and were imported to BiqQuery for exploration, cleaning and analysis.
 
-Combining the data 
+<h3>Combining the data</h3>
 
 SQL: <<link>>
 
@@ -78,23 +68,23 @@ The 12 CSV files have been renamed to month abbreviations for easy reference.
 
 The new combined file is named 2021_combined. The combined file has 5,595,063 row of data covering the entire year.
 
-Data Exploration
+<h3>Data Exploration</h3>
 
 Checking the data for any obvious issues:
 
-The data types for all columns
-Duplicates
-NULL values
-ride_id length
-Number of ride types
-Trips longer than a day
-Trips less than a minute
-Start station and id missing
-End station and id missing
-End coordinates missing
-Membership type
+- The data types for all columns
+- Duplicates
+- NULL values
+- ride_id length
+- Number of ride types
+- Trips longer than a day
+- Trips less than a minute
+- Start station and id missing
+- End station and id missing
+- End coordinates missing
+- Membership type
 
-Types of Data 
+<h3>Types of Data</h3> 
 
 
 
