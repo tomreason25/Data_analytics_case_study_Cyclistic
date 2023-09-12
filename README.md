@@ -142,6 +142,19 @@ SQL: [Analysis
 The data visualizations were performed in [Tableau](https://public.tableau.com/views/CyclisticCaseStudy_16933308328560/TotalTripDashboard?:language=en-US&:display_count=n&:origin=viz_share_link).
 
 
+| | |
+| -------- | ------- |
+| Duplicates  | No duplicate rows were found.    |
+| NULL Values | 690809 NULL values were found for the start station name and id. 739170 NULL values were found for the end station name and id. 4771 Null values were found for the end latitude  and longitude.     |
+| ride_id length    | All ride_id lengths are 16.    |
+|Number of ride types|There are 3 distinct ride types: electrical bike, classic bike, docked bike.|
+|Trips longer than a day|There are 4016 trips longer than a day.|
+|Trips less than a minute|There are 86111 trips less than a minute long.|
+|Start station and id missing|There are 690806 cases where both the start_station_name and the id is missing. These will be removed.|
+|End station and id missing|There are 739170 cases where both the end_staiton_name and the id is missing. These will be removed.|
+|End coordinates missing|4771 missing values for end location (latitude and longitude). These will be removed.|
+|Membership types|Confirmation that there are only 2 distinct membership types: member and casual.|
+
 
 <h3>Summary</h3>
 
