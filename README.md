@@ -8,9 +8,15 @@ August 2023
 In this case study, I wish to illustrate the skills I have developed on the path to a career in data analytics. I will perform the role of a Junior Analyst at a bike share company Cyclistic, tasked with using internal company data to answer key business questions.
 
 Quick links:
+- [SQL Data Exploration
+  ](https://github.com/tomreason25/Data_analytics_case_study_Cyclistic/blob/main/Cyclistic_data_exploration.sql)
+- [SQL Cleaning
+](https://github.com/tomreason25/Data_analytics_case_study_Cyclistic/blob/main/Cyclistic_data_cleaning.sql)
+- [SQL Analysis
+](https://github.com/tomreason25/Data_analytics_case_study_Cyclistic/blob/main/Cyclistic_data_analysis.sql)
 
-—SQL queries
-Data Visualizations: Tableau 
+
+Data Visualizations: [Tableau](https://public.tableau.com/views/CyclisticCaseStudy_16933308328560/TotalTripDashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 <h3>Background</h3>
 
@@ -60,7 +66,7 @@ The files were stored in a bucket in Google cloud storage and were imported to B
 
 <h3>Combining the data</h3>
 
-SQL: <<link>>
+SQL: [Combining data sets](https://github.com/tomreason25/Data_analytics_case_study_Cyclistic/blob/main/Cyclistic_combining_data.sql)
 
 12 CSV files are uploaded as tables in a new assigned data set 2021.
 
@@ -69,6 +75,9 @@ The 12 CSV files have been renamed to month abbreviations for easy reference.
 The new combined file is named 2021_combined. The combined file has 5,595,063 row of data covering the entire year.
 
 <h3>Data Exploration</h3>
+
+SQL: [Data Exploration
+  ](https://github.com/tomreason25/Data_analytics_case_study_Cyclistic/blob/main/Cyclistic_data_exploration.sql)
 
 Checking the data for any obvious issues:
 
@@ -87,10 +96,7 @@ Checking the data for any obvious issues:
 <h3>Types of Data</h3> 
 
 
-
-
-
-
+<img src="https://drive.google.com/file/d/1mrKUGr-pVWJHK6EHT9hAu90PQcT3A">
 
 
 
@@ -105,10 +111,10 @@ Checking the data for any obvious issues:
 The start_station_id and end_station_id will be removed from the table as they do not assist in this analysis.
 
 
+<h2>Data Cleaning</h2>
 
-Data Cleaning
-
-SQL Query: <<link>>
+SQL: [Cleaning
+](https://github.com/tomreason25/Data_analytics_case_study_Cyclistic/blob/main/Cyclistic_data_cleaning.sql)
 
 All rows with missing values have been deleted.
 
@@ -126,21 +132,18 @@ Trips less than a minute and more than a month have been deleted: 90127
 
 Total rows removed 1068047, 19% of original sample.
 
-Analysis
+<h2>Analysis</h2>
 
 With all the data cleaned the next step is to break down the data into multiple relevant tables to query.
 
-SQL <<LINK>>
+SQL: [Analysis
+](https://github.com/tomreason25/Data_analytics_case_study_Cyclistic/blob/main/Cyclistic_data_analysis.sql)
 
-The data visualizations were performed in tableau.
-
-
-
+The data visualizations were performed in [Tableau](https://public.tableau.com/views/CyclisticCaseStudy_16933308328560/TotalTripDashboard?:language=en-US&:display_count=n&:origin=viz_share_link).
 
 
 
-
-Summary
+<h3>Summary</h3>
 
 Members are using the service consistently during the week, primarily during commuting hours. They take similar journey lengths throughout the year and continue to use the service into the winter months, dipping finally in February. The service is used widely and fairly evenly throughout the cities main commercial areas.
 
@@ -152,12 +155,12 @@ Casuals are riding for longer and more frequently during the middle of the day. 
 
 
 
-Act
+<h2>Act</h2>
 
 From the analyzed data there are a few recommendations for marketing strategies intended to convert casual users to members:
 
-Marketing campaigns conducted in the spring and summer would reach the largest amount of casual users.
-Average casual usage drops during morning rush hour, suggesting some are using the bikes to commute. Marketing campaigns should focus around the main commuter destinations incentivizing membership.
+1. Marketing campaigns conducted in the spring and summer would reach the largest amount of casual users.
+2. Average casual usage drops during morning rush hour, suggesting some are using the bikes to commute. Marketing campaigns should focus around the main commuter destinations incentivizing membership.
 
 
 
